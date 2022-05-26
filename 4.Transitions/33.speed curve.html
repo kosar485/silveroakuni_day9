@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>3d rotate</title>
+	<style type="text/css">
+		
+		div{
+			width: 100px;
+			height: 100px;
+			background-color: red;
+			transition: width 2s;
+		}
+	
+		div:hover{
+			width: 300px;
+		}
+
+		#div1{
+			transition-timing-function: linear;
+		}
+
+		/*Slow fast slow */
+
+		#div2{
+			transition-timing-function: ease;
+		}
+
+
+		/*slow start */
+
+		#div3{
+			transition-timing-function: ease-in;
+		}
+
+		/*slow end  */
+
+		#div4{
+			transition-timing-function: ease-out;
+		}
+		
+
+		/*slow star & end  */
+
+		#div5{
+			transition-timing-function: ease-in-out;
+		}
+
+	</style>
+</head>
+<body>
+	<div id="div1">
+		liner
+	</div>
+	<div id="div2">
+		ease
+	</div>
+	
+	<div id="div3">
+		ease in
+	</div>
+
+	<div id="div4">
+		ease-out
+	</div>
+
+
+	<div id="div5">
+		ease-in-out
+	</div>
+</body>
+</html>
